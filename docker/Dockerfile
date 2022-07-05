@@ -68,7 +68,7 @@ ENV LANG C.UTF-8
 
 RUN apt update -y && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
-    apt install -y python3.8 python3-pip
+    apt install -y python3.7 python3-pip
 
 RUN ln -s $(which python3) /usr/local/bin/python
 
@@ -97,3 +97,7 @@ RUN git clone https://github.com/tensorflow/models.git && \
 # Install google cloud SDK
 RUN curl -sSL https://sdk.cloud.google.com > /tmp/gcl && bash /tmp/gcl --install-dir=~/gcloud --disable-prompts
 ENV PATH="$PATH:/root/gcloud/google-cloud-sdk/bin"
+
+RUN pip install tensorflow-gpu==2.9.0 
+# or 1
+WORKDIR /app/project
