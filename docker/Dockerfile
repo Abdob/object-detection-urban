@@ -102,4 +102,6 @@ RUN pip install tensorflow-gpu==2.6.2
 RUN pip install tensorflow-estimator==2.5.0
 RUN pip install grpcio==1.34.1
 
+RUN grep -rl "index(num)" /usr/local/lib/python3.8/dist-packages/numpy/core/function_base.py | xargs sed -i 's/index(num)/index(int(num))/g'
+
 WORKDIR /app/project
