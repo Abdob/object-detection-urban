@@ -98,6 +98,8 @@ RUN git clone https://github.com/tensorflow/models.git && \
 RUN curl -sSL https://sdk.cloud.google.com > /tmp/gcl && bash /tmp/gcl --install-dir=~/gcloud --disable-prompts
 ENV PATH="$PATH:/root/gcloud/google-cloud-sdk/bin"
 
-RUN pip install tensorflow-gpu==2.9.0 
-# or 1
+RUN pip install tensorflow-gpu==2.6.2
+RUN pip install tensorflow-estimator==2.5.0
+RUN pip install grpcio==1.34.1
+
 WORKDIR /app/project

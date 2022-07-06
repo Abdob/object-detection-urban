@@ -3,4 +3,5 @@ docker run --gpus all \
     --network=host \
     -ti \
     --shm-size=4gb \
+    -p 8265:8265 \
     project-dev bash

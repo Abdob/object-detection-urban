@@ -179,3 +179,12 @@ python -m tensorboard.main --logdir experiments/reference/
 
 # after training launch evaulation
 python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config --checkpoint_dir=experiments/reference/
+
+
+
+## redo process for another experient
+# copy file pipeline<x>_config to pipeline_config.txt where <x> is the experiment number
+python edit_config.py --train_dir /app/project/data/train/ --eval_dir /app/project/data/val --batch_size 2 --checkpoint /app/project/experiments/pretrained_model/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/checkpoint/ckpt-0 --label_map /app/project/experiments/label_map.pbtxt
+mkdir -p /app/project/experiments/experiment0/
+mv pipeline_new.config experiments/experiment0/
+python experiments/model_main_tf2.py --model_dir=experiments/experiment0/ --pipeline_config_path=experiments/experiment0/pipeline_new.config
