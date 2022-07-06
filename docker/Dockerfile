@@ -68,7 +68,7 @@ ENV LANG C.UTF-8
 
 RUN apt update -y && \
     add-apt-repository ppa:deadsnakes/ppa -y && \
-    apt install -y python3.7 python3-pip
+    apt install -y python3.8 python3-pip
 
 RUN ln -s $(which python3) /usr/local/bin/python
 
