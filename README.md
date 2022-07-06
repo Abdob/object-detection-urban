@@ -32,7 +32,7 @@ experiments/
 
 Nvidia GPU required, you can use the provided Dockerfile and requirements in the [docker directory](./docker).
 
-Follow [the README therein](./build/README.md) to create a docker container and install all prerequisites.
+Follow [the README therein](./docker/README.md) to create a docker container and install all prerequisites.
 
 
 ## download pretrained model
