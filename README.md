@@ -138,6 +138,9 @@ We were able to slightly improve from the reference training by including improv
 
 
 <img src="training_reference_trail1.png"/>
+<img src="training_reference_trail2.png"/>
+<img src="training_experiment1_trail1.png"/>
+<img src="training_experiment1_trail2.png"/>
 
 
    
