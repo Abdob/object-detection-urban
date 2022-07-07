@@ -128,12 +128,12 @@ The refence experiment ended with loss of about 0.2667, it had an asymtotic shap
 #### Improve on the reference
 We were able to slightly improve from the reference training by including improvement attempts that worked and omitting what didn't work. Horizontal flipping on the dataset proved to be useful (it was included in the reference training and kept in the improved training). Replacing the learning rate to a stair-step as opposed to the cosine-decreasing shape made slight improvements.
 
-| First Header  | Second Header | Third Header | Fourth Header |
+| Experiment  | Description | Trail one | Trial two |
 | ------------- | ------------- | ------------- | ------------- | 
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Reference  | Reference  | 0.2667  | 0.4388  |
+| Experiment0  | Change learning rate to step function  | tbd  | Content Cell  |
+| Experiment1  | Added scaling augmentation  | 0.2742  | 0.2354  |
+
 
 
 
