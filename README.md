@@ -138,10 +138,13 @@ We were able to slightly improve from the reference training by including improv
 
 #### Reference Trail 1
 <img src="training_reference_trail1.png"/>
+    
 #### Reference Trail 2
 <img src="training_reference_trail2.png"/>
+
 #### Added scaling augmentation trial 1
 <img src="training_experiment1_trail1.png"/>
+
 #### Added scaling augmentation trail 2
 <img src="training_experiment1_trail2.png"/>
 
