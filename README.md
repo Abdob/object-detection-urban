@@ -153,5 +153,6 @@ The two experiments we wish to report are the changes to the learning rate and t
 #### Added scaling augmentation trail 2
 <img src="training_experiment1_trail2.png"/>
 
-
+## Precision
+<img src="precision.png"/>
    
