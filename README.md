@@ -118,15 +118,15 @@ Object detection is an important concept for self-driving cars because cars, lik
 #### Dataset analysis
 By analyzing the data in the first notebook, we saw some vehicles were not annotated which is concerning. We were able to gather statistics on the number of objects present in the images for each class of object. The dataset contains a diverse environment settings ranging from day to night, freeways to cities and suburbs, with weather conditions ranging from clear skys to foggy/cloudy. The class distribution, however, is uneven, as shown in the histogram plot the majority of the objects are vehicles with very little cyclists present.
 
-
 #### Cross validation
-The training process included validation which ensured our training doesn't overfit. Using Tensorflow we saw the validation and training loss both decreasing and approaching a small number which is a good sign we have the right model complexitiy and the right data for the training process.
+The training process included validation which ensured our training doesn't overfit. Using Tensorflow we saw the training loss both decreasing and approaching a small number which is a good sign we have the training is working. The validation curve was not provided in the tensorboard, however a value at the end of the validation shows the validation loss consistent with the training loss which is a sign right model complexitiy and the right data for the training process. 
 
 #### Reference experiment
 The refence experiment ended with loss of about 0.2667 and 0.4338 for the first and second trails, it had an asymtotic shape which is what we would expect from proper training. Initially there was a lot of variance in the metrics as observed in tensorflow but overtime, as more batches are being processed, we are able to extract clean filtered curves where we can see the patterns we are looking for. The algorithm performed well and included a cosine-decreasing learning rate as the training process progressed.
 
 #### Improve on the reference
-The two experiments we wish to report are the changes to the learning rate and the scaling augmentation added. The pipeline_config.txt was modified to pipeline_experiment0 and pipeline_experiment1. Replacing the learning rate to a stair-step as opposed to the cosine-decreasing shape made slight improvements, however since the results are not easily reproducible the benefits weren't realized in every trial. The scaling augmentation (from 80% to 100%) proved to improve the training across the two pairs of trials.
+The two experiments we wish to report are the changes to the learning rate and the scaling augmentation added. The pipeline_config.txt was modified to pipeline_experiment0 and pipeline_experiment1. Replacing the learning rate to a stair-step as opposed to the cosine-decreasing shape made slight improvements, however since the results are not easily reproducible the benefits weren't realized in every trial. The scaling augmentation (from 80% to 100%) proved to improve the training across the two pairs of trials. Scaling was chosen to diversify the same dataset for training, scaling will allow the nueral network to learn different scaling of the same images which could be encountered in a real-life scenario when moving closer or further away from object. 80% minimum scaling was chosen to prevent a loss of iamge resolution while 100% max resolution was chosen to keep image populated with meaningful pixels.
+
 
 | Experiment  | Description | Trail one | Trial two |
 | ------------- | ------------- | ------------- | ------------- | 
