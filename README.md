@@ -116,7 +116,8 @@ Object detection is an important concept for self-driving cars because cars, lik
 
 
 #### Dataset analysis
-By analyzing the data in the first notebook, we saw some vehicles were not annotated which is concerning. We were able to gather statistics on the number of objects present in the images for each class of object.
+By analyzing the data in the first notebook, we saw some vehicles were not annotated which is concerning. We were able to gather statistics on the number of objects present in the images for each class of object. The dataset contains a diverse environment settings ranging from day to night, freeways to cities and suburbs, with weather conditions ranging from clear skys to foggy/cloudy. The class distribution, however, is uneven, as shown in the histogram plot the majority of the objects are vehicles with very little cyclists present.
+
 
 #### Cross validation
 The training process included validation which ensured our training doesn't overfit. Using Tensorflow we saw the validation and training loss both decreasing and approaching a small number which is a good sign we have the right model complexitiy and the right data for the training process.

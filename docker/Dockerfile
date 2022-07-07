@@ -104,4 +104,5 @@ RUN pip install grpcio==1.34.1
 
 RUN grep -rl "index(num)" /usr/local/lib/python3.8/dist-packages/numpy/core/function_base.py | xargs sed -i 's/index(num)/index(int(num))/g'
 
+RUN pip install seaborn==0.11.1
 WORKDIR /app/project
