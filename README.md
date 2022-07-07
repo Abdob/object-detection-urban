@@ -144,6 +144,9 @@ The two experiments we wish to report are the changes to the learning rate and t
 #### Change learning rate to step function Trail 1
 <img src="training_experiment0_trail1.png"/>
 
+#### Change learning rate to step function Trail 2
+<img src="training_experiment0_trail2.png"/>
+
 #### Added scaling augmentation trial 1
 <img src="training_experiment1_trail1.png"/>
 
