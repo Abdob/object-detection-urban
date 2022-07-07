@@ -154,5 +154,5 @@ The two experiments we wish to report are the changes to the learning rate and t
 <img src="training_experiment1_trail2.png"/>
 
 ## Precision
-<img src="precision_reference.png"/>
+<img src="precision_refernce.png"/>
    
