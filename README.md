@@ -130,7 +130,7 @@ The two experiments we wish to report are the changes to the learning rate and t
 | Experiment  | Description | Trail one | Trial two |
 | ------------- | ------------- | ------------- | ------------- | 
 | Reference  | Reference  | 0.2667  | 0.4388  |
-| Experiment0  | Change learning rate to step function  | 0.4797  | Content Cell  |
+| Experiment0  | Change learning rate to step function  | 0.4797  | 1.78  |
 | Experiment1  | Added scaling augmentation  | 0.2742  | 0.2354  |
 
 
